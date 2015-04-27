@@ -14,6 +14,8 @@
 		9B19AD411AEE60EC00DB9F46 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B19AD401AEE60EC00DB9F46 /* Images.xcassets */; };
 		9B19AD441AEE60EC00DB9F46 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B19AD421AEE60EC00DB9F46 /* LaunchScreen.xib */; };
 		9B19AD501AEE60EC00DB9F46 /* BaiDuBaiJiaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B19AD4F1AEE60EC00DB9F46 /* BaiDuBaiJiaTests.m */; };
+		9B19AD691AEE69E700DB9F46 /* NetworkBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B19AD681AEE69E700DB9F46 /* NetworkBL.m */; };
+		D277C89BABC1E19BAE9DDE95 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C8B648C6A7143085919AE1 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		34C8B648C6A7143085919AE1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		39E465BD8AE8E3BE0BD69BC1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9B19AD301AEE60EC00DB9F46 /* BaiDuBaiJia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiDuBaiJia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B19AD341AEE60EC00DB9F46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B19AD351AEE60EC00DB9F46 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +44,9 @@
 		9B19AD491AEE60EC00DB9F46 /* BaiDuBaiJiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaiDuBaiJiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B19AD4E1AEE60EC00DB9F46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B19AD4F1AEE60EC00DB9F46 /* BaiDuBaiJiaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaiDuBaiJiaTests.m; sourceTree = "<group>"; };
+		9B19AD671AEE69E700DB9F46 /* NetworkBL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkBL.h; sourceTree = "<group>"; };
+		9B19AD681AEE69E700DB9F46 /* NetworkBL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkBL.m; sourceTree = "<group>"; };
+		FFDAA37812B63F2382157D97 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D277C89BABC1E19BAE9DDE95 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,8 +72,12 @@
 			isa = PBXGroup;
 			children = (
 				9B19AD321AEE60EC00DB9F46 /* BaiDuBaiJia */,
+				9B19AD651AEE693E00DB9F46 /* BusinessLayer */,
+				9B19AD661AEE69A100DB9F46 /* PersistenceLayer */,
 				9B19AD4C1AEE60EC00DB9F46 /* BaiDuBaiJiaTests */,
 				9B19AD311AEE60EC00DB9F46 /* Products */,
+				ED5CEE0A273D4788DEB098BD /* Pods */,
+				9D6FE87887B2288DD8608E9F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +131,41 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9B19AD651AEE693E00DB9F46 /* BusinessLayer */ = {
+			isa = PBXGroup;
+			children = (
+				9B19AD671AEE69E700DB9F46 /* NetworkBL.h */,
+				9B19AD681AEE69E700DB9F46 /* NetworkBL.m */,
+			);
+			name = BusinessLayer;
+			path = BaiDuBaiJia;
+			sourceTree = "<group>";
+		};
+		9B19AD661AEE69A100DB9F46 /* PersistenceLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = PersistenceLayer;
+			path = BaiDuBaiJia;
+			sourceTree = "<group>";
+		};
+		9D6FE87887B2288DD8608E9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34C8B648C6A7143085919AE1 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED5CEE0A273D4788DEB098BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39E465BD8AE8E3BE0BD69BC1 /* Pods.debug.xcconfig */,
+				FFDAA37812B63F2382157D97 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +173,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B19AD531AEE60EC00DB9F46 /* Build configuration list for PBXNativeTarget "BaiDuBaiJia" */;
 			buildPhases = (
+				12B979D90A89FB1E6B3A993B /* Check Pods Manifest.lock */,
 				9B19AD2C1AEE60EC00DB9F46 /* Sources */,
 				9B19AD2D1AEE60EC00DB9F46 /* Frameworks */,
 				9B19AD2E1AEE60EC00DB9F46 /* Resources */,
+				E29C4CBB84A9824B23F55B91 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,6 +263,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		12B979D90A89FB1E6B3A993B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E29C4CBB84A9824B23F55B91 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9B19AD2C1AEE60EC00DB9F46 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -221,6 +303,7 @@
 			files = (
 				9B19AD3C1AEE60EC00DB9F46 /* ViewController.m in Sources */,
 				9B19AD391AEE60EC00DB9F46 /* AppDelegate.m in Sources */,
+				9B19AD691AEE69E700DB9F46 /* NetworkBL.m in Sources */,
 				9B19AD361AEE60EC00DB9F46 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,9 +424,11 @@
 		};
 		9B19AD541AEE60EC00DB9F46 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39E465BD8AE8E3BE0BD69BC1 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BaiDuBaiJia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -351,9 +436,11 @@
 		};
 		9B19AD551AEE60EC00DB9F46 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFDAA37812B63F2382157D97 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BaiDuBaiJia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +499,7 @@
 				9B19AD551AEE60EC00DB9F46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B19AD561AEE60EC00DB9F46 /* Build configuration list for PBXNativeTarget "BaiDuBaiJiaTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +508,7 @@
 				9B19AD581AEE60EC00DB9F46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

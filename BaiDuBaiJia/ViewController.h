@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIImageView *CyclicImageView;
+@property (weak, nonatomic) IBOutlet UITableView *TableView;
 
 @end
 
