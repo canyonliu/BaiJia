@@ -15,6 +15,8 @@
 		9B19AD441AEE60EC00DB9F46 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B19AD421AEE60EC00DB9F46 /* LaunchScreen.xib */; };
 		9B19AD501AEE60EC00DB9F46 /* BaiDuBaiJiaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B19AD4F1AEE60EC00DB9F46 /* BaiDuBaiJiaTests.m */; };
 		9B19AD691AEE69E700DB9F46 /* NetworkBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B19AD681AEE69E700DB9F46 /* NetworkBL.m */; };
+		9B19AD701AEE741000DB9F46 /* NewsShowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B19AD6E1AEE741000DB9F46 /* NewsShowCell.m */; };
+		9B19AD711AEE741000DB9F46 /* NewsShowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B19AD6F1AEE741000DB9F46 /* NewsShowCell.xib */; };
 		D277C89BABC1E19BAE9DDE95 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C8B648C6A7143085919AE1 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,9 @@
 		9B19AD4F1AEE60EC00DB9F46 /* BaiDuBaiJiaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaiDuBaiJiaTests.m; sourceTree = "<group>"; };
 		9B19AD671AEE69E700DB9F46 /* NetworkBL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkBL.h; sourceTree = "<group>"; };
 		9B19AD681AEE69E700DB9F46 /* NetworkBL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkBL.m; sourceTree = "<group>"; };
+		9B19AD6D1AEE741000DB9F46 /* NewsShowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsShowCell.h; sourceTree = "<group>"; };
+		9B19AD6E1AEE741000DB9F46 /* NewsShowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsShowCell.m; sourceTree = "<group>"; };
+		9B19AD6F1AEE741000DB9F46 /* NewsShowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsShowCell.xib; sourceTree = "<group>"; };
 		FFDAA37812B63F2382157D97 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +102,9 @@
 				9B19AD381AEE60EC00DB9F46 /* AppDelegate.m */,
 				9B19AD3A1AEE60EC00DB9F46 /* ViewController.h */,
 				9B19AD3B1AEE60EC00DB9F46 /* ViewController.m */,
+				9B19AD6D1AEE741000DB9F46 /* NewsShowCell.h */,
+				9B19AD6E1AEE741000DB9F46 /* NewsShowCell.m */,
+				9B19AD6F1AEE741000DB9F46 /* NewsShowCell.xib */,
 				9B19AD3D1AEE60EC00DB9F46 /* Main.storyboard */,
 				9B19AD401AEE60EC00DB9F46 /* Images.xcassets */,
 				9B19AD421AEE60EC00DB9F46 /* LaunchScreen.xib */,
@@ -251,6 +259,7 @@
 				9B19AD3F1AEE60EC00DB9F46 /* Main.storyboard in Resources */,
 				9B19AD441AEE60EC00DB9F46 /* LaunchScreen.xib in Resources */,
 				9B19AD411AEE60EC00DB9F46 /* Images.xcassets in Resources */,
+				9B19AD711AEE741000DB9F46 /* NewsShowCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +313,7 @@
 				9B19AD3C1AEE60EC00DB9F46 /* ViewController.m in Sources */,
 				9B19AD391AEE60EC00DB9F46 /* AppDelegate.m in Sources */,
 				9B19AD691AEE69E700DB9F46 /* NetworkBL.m in Sources */,
+				9B19AD701AEE741000DB9F46 /* NewsShowCell.m in Sources */,
 				9B19AD361AEE60EC00DB9F46 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
