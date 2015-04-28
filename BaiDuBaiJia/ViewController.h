@@ -13,5 +13,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *CyclicImageView;
 @property (weak, nonatomic) IBOutlet UITableView *TableView;
 
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIPageControl *pageControll;
+
 @end
 

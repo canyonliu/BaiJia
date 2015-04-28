@@ -24,6 +24,14 @@
                                 <rect key="frame" x="0.0" y="189" width="320" height="384"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hnp-5H-6UH">
+                                <rect key="frame" x="0.0" y="64" width="320" height="101"/>
+                                <subviews>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="BMQ-8O-9iB">
+                                        <rect key="frame" x="141" y="64" width="39" height="37"/>
+                                    </pageControl>
+                                </subviews>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -32,11 +40,32 @@
                     <connections>
                         <outlet property="CyclicImageView" destination="bBU-I1-2yt" id="F9W-GC-DXP"/>
                         <outlet property="TableView" destination="RE9-ep-5GQ" id="SrE-hH-HDN"/>
+                        <outlet property="pageControll" destination="BMQ-8O-9iB" id="aSX-62-lvF"/>
+                        <outlet property="scrollView" destination="hnp-5H-6UH" id="s3Y-Xi-DBn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="925" y="305"/>
+            <point key="canvasLocation" x="920" y="305"/>
+        </scene>
+        <!--News Detail View Controller-->
+        <scene sceneID="Sf6-gg-G4B">
+            <objects>
+                <viewController storyboardIdentifier="newsDetailCell" id="CUi-LU-o27" customClass="NewsDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="flN-Uz-n7c"/>
+                        <viewControllerLayoutGuide type="bottom" id="upr-v4-RQS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qf8-5B-NY8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tca-g1-qMr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1360" y="305"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9hy-PV-51l">
