@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "UIViewController+XTSideMenu.h"
+#import "XTSideMenu.h"
+
 #import "NewsShowCell.h"
 #import "ImageCell.h"
 #import "NewsDetailViewController.h"
@@ -25,6 +28,8 @@
     [super viewDidLoad];
     self.TableView.delegate = self;
     self.TableView.dataSource = self;
+    
+    self.headerView.backgroundColor = [UIColor redColor];
     //self.scrollView.delegate = self;
     //self.CyclicImageView.image = [UIImage imageNamed:@"3"];
 
@@ -155,6 +160,14 @@
     cell.NewsInfo.text = @"百度百家";
     cell.Source.text = @"IT之家";
     cell.NewsPic.image = [UIImage imageNamed:@"2"];
+    UIBezierPath* path1 = [UIBezierPath bezierPathWithArcCenter:CGPointMake(cell.NewsPic.bounds.size.width/2, cell.NewsPic.bounds.size.height/2) radius:cell.NewsPic.bounds.size.width/2-5 startAngle:0 endAngle:2*M_PI clockwise:YES];
+    
+    CAShapeLayer* shape1 = [CAShapeLayer layer];
+    
+    shape1.path = path1.CGPath;
+    
+    cell.NewsPic.layer.mask = shape1;
+
     
     
     return cell;
@@ -185,5 +198,10 @@
 }
 
 
+
+#pragma mark - 展示左边侧滑栏
+- (IBAction)showLeftMenu:(UIButton *)sender {
+    [self.sideMenuViewController presentLeftViewController];
+}
 
 @end

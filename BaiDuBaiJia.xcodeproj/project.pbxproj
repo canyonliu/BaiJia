@@ -18,7 +18,15 @@
 		9B19AD701AEE741000DB9F46 /* NewsShowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B19AD6E1AEE741000DB9F46 /* NewsShowCell.m */; };
 		9B19AD711AEE741000DB9F46 /* NewsShowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B19AD6F1AEE741000DB9F46 /* NewsShowCell.xib */; };
 		9B8546BE1AEF165500E4E001 /* NewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8546BD1AEF165500E4E001 /* NewsDetailViewController.m */; };
+		9B9C36491AF3047800107EA3 /* UIViewController+XTSideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9C363F1AF3047800107EA3 /* UIViewController+XTSideMenu.m */; };
+		9B9C364A1AF3047800107EA3 /* XTSideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9C36411AF3047800107EA3 /* XTSideMenu.m */; };
+		9B9C364B1AF3047800107EA3 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9C36441AF3047800107EA3 /* UIImage+ImageEffects.m */; };
+		9B9C364C1AF3047800107EA3 /* UIView+XTFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9C36461AF3047800107EA3 /* UIView+XTFrame.m */; };
+		9B9C364D1AF3047800107EA3 /* XTBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9C36481AF3047800107EA3 /* XTBlurView.m */; };
+		9B9C36551AF30BBA00107EA3 /* BJLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9C36541AF30BBA00107EA3 /* BJLeftViewController.m */; };
 		9B9E09BA1AEF95790077FC2D /* NewsDetailToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9E09B91AEF95790077FC2D /* NewsDetailToolBar.m */; };
+		9BE110D01AF3547F006D97B8 /* LeftViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BE110CE1AF3547F006D97B8 /* LeftViewCell.m */; };
+		9BE110D11AF3547F006D97B8 /* LeftViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BE110CF1AF3547F006D97B8 /* LeftViewCell.xib */; };
 		D277C89BABC1E19BAE9DDE95 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C8B648C6A7143085919AE1 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -55,8 +63,23 @@
 		9B19AD6F1AEE741000DB9F46 /* NewsShowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsShowCell.xib; sourceTree = "<group>"; };
 		9B8546BC1AEF165500E4E001 /* NewsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDetailViewController.h; sourceTree = "<group>"; };
 		9B8546BD1AEF165500E4E001 /* NewsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetailViewController.m; sourceTree = "<group>"; };
+		9B9C363E1AF3047800107EA3 /* UIViewController+XTSideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XTSideMenu.h"; sourceTree = "<group>"; };
+		9B9C363F1AF3047800107EA3 /* UIViewController+XTSideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XTSideMenu.m"; sourceTree = "<group>"; };
+		9B9C36401AF3047800107EA3 /* XTSideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTSideMenu.h; sourceTree = "<group>"; };
+		9B9C36411AF3047800107EA3 /* XTSideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTSideMenu.m; sourceTree = "<group>"; };
+		9B9C36431AF3047800107EA3 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		9B9C36441AF3047800107EA3 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		9B9C36451AF3047800107EA3 /* UIView+XTFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XTFrame.h"; sourceTree = "<group>"; };
+		9B9C36461AF3047800107EA3 /* UIView+XTFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XTFrame.m"; sourceTree = "<group>"; };
+		9B9C36471AF3047800107EA3 /* XTBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTBlurView.h; sourceTree = "<group>"; };
+		9B9C36481AF3047800107EA3 /* XTBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTBlurView.m; sourceTree = "<group>"; };
+		9B9C36531AF30BBA00107EA3 /* BJLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJLeftViewController.h; sourceTree = "<group>"; };
+		9B9C36541AF30BBA00107EA3 /* BJLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJLeftViewController.m; sourceTree = "<group>"; };
 		9B9E09B81AEF95790077FC2D /* NewsDetailToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDetailToolBar.h; sourceTree = "<group>"; };
 		9B9E09B91AEF95790077FC2D /* NewsDetailToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetailToolBar.m; sourceTree = "<group>"; };
+		9BE110CD1AF3547F006D97B8 /* LeftViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewCell.h; sourceTree = "<group>"; };
+		9BE110CE1AF3547F006D97B8 /* LeftViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewCell.m; sourceTree = "<group>"; };
+		9BE110CF1AF3547F006D97B8 /* LeftViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftViewCell.xib; sourceTree = "<group>"; };
 		FFDAA37812B63F2382157D97 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +108,7 @@
 				9B19AD321AEE60EC00DB9F46 /* BaiDuBaiJia */,
 				9B19AD651AEE693E00DB9F46 /* BusinessLayer */,
 				9B19AD661AEE69A100DB9F46 /* PersistenceLayer */,
+				9B9C363C1AF3047800107EA3 /* Lib */,
 				9B19AD4C1AEE60EC00DB9F46 /* BaiDuBaiJiaTests */,
 				9B19AD311AEE60EC00DB9F46 /* Products */,
 				ED5CEE0A273D4788DEB098BD /* Pods */,
@@ -163,15 +187,67 @@
 		9B8546BF1AEF166000E4E001 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9B9C364F1AF30A9000107EA3 /* XTSideMenu */,
 				9B19AD3A1AEE60EC00DB9F46 /* ViewController.h */,
 				9B19AD3B1AEE60EC00DB9F46 /* ViewController.m */,
-				9B8546BC1AEF165500E4E001 /* NewsDetailViewController.h */,
-				9B8546BD1AEF165500E4E001 /* NewsDetailViewController.m */,
 				9B19AD6D1AEE741000DB9F46 /* NewsShowCell.h */,
 				9B19AD6E1AEE741000DB9F46 /* NewsShowCell.m */,
 				9B19AD6F1AEE741000DB9F46 /* NewsShowCell.xib */,
+				9B9C364E1AF30A6E00107EA3 /* newsDetail */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		9B9C363C1AF3047800107EA3 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				9B9C363D1AF3047800107EA3 /* XTSideMenu */,
+			);
+			name = Lib;
+			path = BaiDuBaiJia/Lib;
+			sourceTree = "<group>";
+		};
+		9B9C363D1AF3047800107EA3 /* XTSideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				9B9C363E1AF3047800107EA3 /* UIViewController+XTSideMenu.h */,
+				9B9C363F1AF3047800107EA3 /* UIViewController+XTSideMenu.m */,
+				9B9C36401AF3047800107EA3 /* XTSideMenu.h */,
+				9B9C36411AF3047800107EA3 /* XTSideMenu.m */,
+				9B9C36421AF3047800107EA3 /* XTSideMenuHelper */,
+			);
+			path = XTSideMenu;
+			sourceTree = "<group>";
+		};
+		9B9C36421AF3047800107EA3 /* XTSideMenuHelper */ = {
+			isa = PBXGroup;
+			children = (
+				9B9C36431AF3047800107EA3 /* UIImage+ImageEffects.h */,
+				9B9C36441AF3047800107EA3 /* UIImage+ImageEffects.m */,
+				9B9C36451AF3047800107EA3 /* UIView+XTFrame.h */,
+				9B9C36461AF3047800107EA3 /* UIView+XTFrame.m */,
+				9B9C36471AF3047800107EA3 /* XTBlurView.h */,
+				9B9C36481AF3047800107EA3 /* XTBlurView.m */,
+			);
+			path = XTSideMenuHelper;
+			sourceTree = "<group>";
+		};
+		9B9C364E1AF30A6E00107EA3 /* newsDetail */ = {
+			isa = PBXGroup;
+			children = (
+				9B8546BC1AEF165500E4E001 /* NewsDetailViewController.h */,
+				9B8546BD1AEF165500E4E001 /* NewsDetailViewController.m */,
+			);
+			name = newsDetail;
+			sourceTree = "<group>";
+		};
+		9B9C364F1AF30A9000107EA3 /* XTSideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				9B9C36531AF30BBA00107EA3 /* BJLeftViewController.h */,
+				9B9C36541AF30BBA00107EA3 /* BJLeftViewController.m */,
+			);
+			name = XTSideMenu;
 			sourceTree = "<group>";
 		};
 		9B9E09B41AEF94F30077FC2D /* View */ = {
@@ -179,6 +255,9 @@
 			children = (
 				9B9E09B81AEF95790077FC2D /* NewsDetailToolBar.h */,
 				9B9E09B91AEF95790077FC2D /* NewsDetailToolBar.m */,
+				9BE110CD1AF3547F006D97B8 /* LeftViewCell.h */,
+				9BE110CE1AF3547F006D97B8 /* LeftViewCell.m */,
+				9BE110CF1AF3547F006D97B8 /* LeftViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -286,6 +365,7 @@
 				9B19AD441AEE60EC00DB9F46 /* LaunchScreen.xib in Resources */,
 				9B19AD411AEE60EC00DB9F46 /* Images.xcassets in Resources */,
 				9B19AD711AEE741000DB9F46 /* NewsShowCell.xib in Resources */,
+				9BE110D11AF3547F006D97B8 /* LeftViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,8 +420,15 @@
 				9B19AD391AEE60EC00DB9F46 /* AppDelegate.m in Sources */,
 				9B19AD691AEE69E700DB9F46 /* NetworkBL.m in Sources */,
 				9B9E09BA1AEF95790077FC2D /* NewsDetailToolBar.m in Sources */,
+				9B9C364C1AF3047800107EA3 /* UIView+XTFrame.m in Sources */,
 				9B19AD701AEE741000DB9F46 /* NewsShowCell.m in Sources */,
 				9B8546BE1AEF165500E4E001 /* NewsDetailViewController.m in Sources */,
+				9BE110D01AF3547F006D97B8 /* LeftViewCell.m in Sources */,
+				9B9C364D1AF3047800107EA3 /* XTBlurView.m in Sources */,
+				9B9C364B1AF3047800107EA3 /* UIImage+ImageEffects.m in Sources */,
+				9B9C36551AF30BBA00107EA3 /* BJLeftViewController.m in Sources */,
+				9B9C36491AF3047800107EA3 /* UIViewController+XTSideMenu.m in Sources */,
+				9B9C364A1AF3047800107EA3 /* XTSideMenu.m in Sources */,
 				9B19AD361AEE60EC00DB9F46 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

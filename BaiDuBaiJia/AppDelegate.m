@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "XTSideMenu.h"
+//#import "BJCenterViewController.h"
+#import "ViewController.h"
+#import "BJLeftViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +20,25 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    //BJCenterViewController *centerVC = [[BJCenterViewController alloc]initWithNibName:@"BJCenterViewController" bundle:nil];
+    ViewController *centerVC =  [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]]instantiateViewControllerWithIdentifier:@"centerVC"];//[[ViewController alloc]init];
+    
+    BJLeftViewController *leftVC =//[[BJLeftViewController alloc]init];
+    [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]]instantiateViewControllerWithIdentifier:@"leftVC1"];;
+    XTSideMenu *root = [[XTSideMenu alloc]initWithContentViewController:centerVC leftMenuViewController:leftVC rightMenuViewController:nil];
+    
+//    UINavigationController *navVC = [[UINavigationController alloc]init];
+//    [navVC pushViewController:root animated:YES];
+//    navVC.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"1233" style:UIBarButtonItemStyleDone target:self action:nil];
+//    navVC.title =@"百度百家";
+    
+    
+    self.window.rootViewController = root;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
