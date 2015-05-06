@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B09CB2B1AFA382500DCB250 /* h1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B09CB271AFA382500DCB250 /* h1.jpg */; };
+		9B09CB2C1AFA382500DCB250 /* h3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B09CB281AFA382500DCB250 /* h3.jpg */; };
+		9B09CB2D1AFA382500DCB250 /* h2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B09CB291AFA382500DCB250 /* h2.jpg */; };
+		9B09CB2E1AFA382500DCB250 /* h4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B09CB2A1AFA382500DCB250 /* h4.jpg */; };
+		9B09CB3E1AFA391600DCB250 /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B09CB311AFA391600DCB250 /* SDCollectionViewCell.m */; };
+		9B09CB3F1AFA391600DCB250 /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B09CB331AFA391600DCB250 /* SDCycleScrollView.m */; };
+		9B09CB401AFA391600DCB250 /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B09CB351AFA391600DCB250 /* TAAbstractDotView.m */; };
+		9B09CB411AFA391600DCB250 /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B09CB371AFA391600DCB250 /* TAAnimatedDotView.m */; };
+		9B09CB421AFA391600DCB250 /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B09CB391AFA391600DCB250 /* TADotView.m */; };
+		9B09CB431AFA391600DCB250 /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B09CB3B1AFA391600DCB250 /* TAPageControl.m */; };
+		9B09CB441AFA391600DCB250 /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B09CB3D1AFA391600DCB250 /* UIView+SDExtension.m */; };
 		9B19AD361AEE60EC00DB9F46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B19AD351AEE60EC00DB9F46 /* main.m */; };
 		9B19AD391AEE60EC00DB9F46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B19AD381AEE60EC00DB9F46 /* AppDelegate.m */; };
 		9B19AD3C1AEE60EC00DB9F46 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B19AD3B1AEE60EC00DB9F46 /* ViewController.m */; };
@@ -43,6 +54,24 @@
 /* Begin PBXFileReference section */
 		34C8B648C6A7143085919AE1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		39E465BD8AE8E3BE0BD69BC1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9B09CB271AFA382500DCB250 /* h1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = h1.jpg; sourceTree = "<group>"; };
+		9B09CB281AFA382500DCB250 /* h3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = h3.jpg; sourceTree = "<group>"; };
+		9B09CB291AFA382500DCB250 /* h2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = h2.jpg; sourceTree = "<group>"; };
+		9B09CB2A1AFA382500DCB250 /* h4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = h4.jpg; sourceTree = "<group>"; };
+		9B09CB301AFA391600DCB250 /* SDCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCollectionViewCell.h; sourceTree = "<group>"; };
+		9B09CB311AFA391600DCB250 /* SDCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCollectionViewCell.m; sourceTree = "<group>"; };
+		9B09CB321AFA391600DCB250 /* SDCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCycleScrollView.h; sourceTree = "<group>"; };
+		9B09CB331AFA391600DCB250 /* SDCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollView.m; sourceTree = "<group>"; };
+		9B09CB341AFA391600DCB250 /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
+		9B09CB351AFA391600DCB250 /* TAAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAbstractDotView.m; sourceTree = "<group>"; };
+		9B09CB361AFA391600DCB250 /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
+		9B09CB371AFA391600DCB250 /* TAAnimatedDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAnimatedDotView.m; sourceTree = "<group>"; };
+		9B09CB381AFA391600DCB250 /* TADotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADotView.h; sourceTree = "<group>"; };
+		9B09CB391AFA391600DCB250 /* TADotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADotView.m; sourceTree = "<group>"; };
+		9B09CB3A1AFA391600DCB250 /* TAPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPageControl.h; sourceTree = "<group>"; };
+		9B09CB3B1AFA391600DCB250 /* TAPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPageControl.m; sourceTree = "<group>"; };
+		9B09CB3C1AFA391600DCB250 /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
+		9B09CB3D1AFA391600DCB250 /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
 		9B19AD301AEE60EC00DB9F46 /* BaiDuBaiJia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiDuBaiJia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B19AD341AEE60EC00DB9F46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B19AD351AEE60EC00DB9F46 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -102,6 +131,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B09CB2F1AFA391600DCB250 /* SDCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				9B09CB301AFA391600DCB250 /* SDCollectionViewCell.h */,
+				9B09CB311AFA391600DCB250 /* SDCollectionViewCell.m */,
+				9B09CB321AFA391600DCB250 /* SDCycleScrollView.h */,
+				9B09CB331AFA391600DCB250 /* SDCycleScrollView.m */,
+				9B09CB341AFA391600DCB250 /* TAAbstractDotView.h */,
+				9B09CB351AFA391600DCB250 /* TAAbstractDotView.m */,
+				9B09CB361AFA391600DCB250 /* TAAnimatedDotView.h */,
+				9B09CB371AFA391600DCB250 /* TAAnimatedDotView.m */,
+				9B09CB381AFA391600DCB250 /* TADotView.h */,
+				9B09CB391AFA391600DCB250 /* TADotView.m */,
+				9B09CB3A1AFA391600DCB250 /* TAPageControl.h */,
+				9B09CB3B1AFA391600DCB250 /* TAPageControl.m */,
+				9B09CB3C1AFA391600DCB250 /* UIView+SDExtension.h */,
+				9B09CB3D1AFA391600DCB250 /* UIView+SDExtension.m */,
+			);
+			path = SDCycleScrollView;
+			sourceTree = "<group>";
+		};
 		9B19AD271AEE60EB00DB9F46 = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +189,10 @@
 		9B19AD331AEE60EC00DB9F46 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9B09CB271AFA382500DCB250 /* h1.jpg */,
+				9B09CB281AFA382500DCB250 /* h3.jpg */,
+				9B09CB291AFA382500DCB250 /* h2.jpg */,
+				9B09CB2A1AFA382500DCB250 /* h4.jpg */,
 				9B19AD401AEE60EC00DB9F46 /* Images.xcassets */,
 				9B19AD421AEE60EC00DB9F46 /* LaunchScreen.xib */,
 				9B19AD371AEE60EC00DB9F46 /* AppDelegate.h */,
@@ -201,6 +255,7 @@
 		9B9C363C1AF3047800107EA3 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				9B09CB2F1AFA391600DCB250 /* SDCycleScrollView */,
 				9B9C363D1AF3047800107EA3 /* XTSideMenu */,
 			);
 			name = Lib;
@@ -361,11 +416,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B09CB2C1AFA382500DCB250 /* h3.jpg in Resources */,
 				9B19AD3F1AEE60EC00DB9F46 /* Main.storyboard in Resources */,
 				9B19AD441AEE60EC00DB9F46 /* LaunchScreen.xib in Resources */,
 				9B19AD411AEE60EC00DB9F46 /* Images.xcassets in Resources */,
+				9B09CB2E1AFA382500DCB250 /* h4.jpg in Resources */,
 				9B19AD711AEE741000DB9F46 /* NewsShowCell.xib in Resources */,
+				9B09CB2B1AFA382500DCB250 /* h1.jpg in Resources */,
 				9BE110D11AF3547F006D97B8 /* LeftViewCell.xib in Resources */,
+				9B09CB2D1AFA382500DCB250 /* h2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,13 +482,20 @@
 				9B9C364C1AF3047800107EA3 /* UIView+XTFrame.m in Sources */,
 				9B19AD701AEE741000DB9F46 /* NewsShowCell.m in Sources */,
 				9B8546BE1AEF165500E4E001 /* NewsDetailViewController.m in Sources */,
+				9B09CB441AFA391600DCB250 /* UIView+SDExtension.m in Sources */,
 				9BE110D01AF3547F006D97B8 /* LeftViewCell.m in Sources */,
+				9B09CB411AFA391600DCB250 /* TAAnimatedDotView.m in Sources */,
+				9B09CB401AFA391600DCB250 /* TAAbstractDotView.m in Sources */,
+				9B09CB421AFA391600DCB250 /* TADotView.m in Sources */,
+				9B09CB3E1AFA391600DCB250 /* SDCollectionViewCell.m in Sources */,
 				9B9C364D1AF3047800107EA3 /* XTBlurView.m in Sources */,
 				9B9C364B1AF3047800107EA3 /* UIImage+ImageEffects.m in Sources */,
 				9B9C36551AF30BBA00107EA3 /* BJLeftViewController.m in Sources */,
 				9B9C36491AF3047800107EA3 /* UIViewController+XTSideMenu.m in Sources */,
 				9B9C364A1AF3047800107EA3 /* XTSideMenu.m in Sources */,
+				9B09CB431AFA391600DCB250 /* TAPageControl.m in Sources */,
 				9B19AD361AEE60EC00DB9F46 /* main.m in Sources */,
+				9B09CB3F1AFA391600DCB250 /* SDCycleScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

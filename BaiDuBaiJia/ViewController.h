@@ -7,15 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SDCycleScrollView.h"
 
 @interface ViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIView *headerView;
-@property (weak, nonatomic) IBOutlet UIImageView *CyclicImageView;
 @property (weak, nonatomic) IBOutlet UITableView *TableView;
 
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (weak, nonatomic) IBOutlet UIPageControl *pageControll;
+@property (weak, nonatomic) IBOutlet SDCycleScrollView *cycleView;
+
 
 @end
 

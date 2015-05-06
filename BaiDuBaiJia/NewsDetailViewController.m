@@ -29,7 +29,7 @@
     CGFloat toolBarW = self.view.frame.size.width;
     CGFloat toolBarH = 44.0;
     CGFloat x = 0;
-    CGFloat y = self.view.frame.size.height - toolBarH;
+    CGFloat y = self.view.frame.size.height - toolBarH - 15;
    
     toolBar.frame = CGRectMake(x, y, toolBarW, toolBarH);
     toolBar.delegate = self;

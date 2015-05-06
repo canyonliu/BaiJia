@@ -68,6 +68,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <view contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gOT-an-LVV">
+                                <rect key="frame" x="0.0" y="64" width="320" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7qv-as-sn3">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                                 <subviews>
@@ -84,17 +88,8 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="RE9-ep-5GQ">
-                                <rect key="frame" x="0.0" y="64" width="320" height="509"/>
+                                <rect key="frame" x="0.0" y="164" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <scrollView key="tableHeaderView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="hnp-5H-6UH">
-                                    <rect key="frame" x="0.0" y="64" width="320" height="101"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <subviews>
-                                        <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="BMQ-8O-9iB">
-                                            <rect key="frame" x="141" y="64" width="39" height="37"/>
-                                        </pageControl>
-                                    </subviews>
-                                </scrollView>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -103,14 +98,13 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="TableView" destination="RE9-ep-5GQ" id="SrE-hH-HDN"/>
+                        <outlet property="cycleView" destination="gOT-an-LVV" id="R8P-9M-94f"/>
                         <outlet property="headerView" destination="7qv-as-sn3" id="2UW-7P-SIj"/>
-                        <outlet property="pageControll" destination="BMQ-8O-9iB" id="aSX-62-lvF"/>
-                        <outlet property="scrollView" destination="hnp-5H-6UH" id="s3Y-Xi-DBn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1732" y="305"/>
+            <point key="canvasLocation" x="1696" y="394"/>
         </scene>
         <!--News Detail View Controller-->
         <scene sceneID="Sf6-gg-G4B">
