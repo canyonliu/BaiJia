@@ -12,6 +12,10 @@
 #import "ViewController.h"
 #import "BJLeftViewController.h"
 
+#import "UMSocial.h"
+#import "UMSocialQQHandler.h"
+//#import "UMSocialSinaSSOHandler.h"
+
 @interface AppDelegate ()
 
 @end
@@ -20,6 +24,19 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    //设置分享
+    [UMSocialData setAppKey:@"555b295867e58e3440002e5a"];
+    [UMSocialQQHandler setQQWithAppId:@"1104652552" appKey:@"J3nV96o91JGevhY2" url:@"http://www.baidu.com"];
+    //打开新浪微博的SSO开关，设置新浪微博回调地址，这里必须要和你在新浪微博后台设置的回调地址一致。若在新浪后台设置我们的回调地址，“http://sns.whalecloud.com/sina2/callback”，这里可以传nil
+//    [UMSocialSinaSSOHandler openNewSinaSSOWithRedirectURL:@"http://sns.whalecloud.com/sina2/callback"];
+    
+    
+    
+    
+    
+    
+    
+    
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     
@@ -41,6 +58,21 @@
     
     return YES;
 }
+
+
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+    return  [UMSocialSnsService handleOpenURL:url];
+}
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation
+{
+    return  [UMSocialSnsService handleOpenURL:url];
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

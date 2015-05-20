@@ -16,14 +16,14 @@
     {
         self.backgroundColor = [UIColor clearColor];
         
-        [self addButtonWithIcon:@"1" highlightedIcon:@"2" tag:
+        [self addButtonWithIcon:@"back" highlightedIcon:@"back" tag:
          NewsDetailToolBarButtonTagBack];
         
-        [self addButtonWithIcon:@"1" highlightedIcon:@"2" tag:NewsDetailToolBarButtonTagPraise];
+        [self addButtonWithIcon:@"home" highlightedIcon:@"home" tag:NewsDetailToolBarButtonTagPraise];
         
-        [self addButtonWithIcon:@"1" highlightedIcon:@"2" tag:NewsDetailToolBarButtonTagShare];
+        [self addButtonWithIcon:@"left" highlightedIcon:@"left" tag:NewsDetailToolBarButtonTagShare];
         
-        [self addButtonWithIcon:@"1" highlightedIcon:@"2" tag:NewsDetailToolBarButtonTagStore];
+        [self addButtonWithIcon:@"store" highlightedIcon:@"store" tag:NewsDetailToolBarButtonTagStore];
         
         
         

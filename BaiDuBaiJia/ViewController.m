@@ -9,11 +9,13 @@
 #import "ViewController.h"
 #import "UIViewController+XTSideMenu.h"
 #import "XTSideMenu.h"
+#import "Tools.h"
 
 
 #import "NewsShowCell.h"
 #import "ImageCell.h"
 #import "NewsDetailViewController.h"
+#import "NetworkBL.h"
 
 //static NSString *cellID = @"collectionCell";
 
@@ -30,11 +32,14 @@
     self.TableView.delegate = self;
     self.TableView.dataSource = self;
     
-    self.headerView.backgroundColor = [UIColor redColor];
+    self.headerView.backgroundColor = [Tools getMainColor];
     
     [self setupCycleImage];
-
-
+    
+    //测试接口
+    NetworkBL *network = [NetworkBL new];
+    [network getLatestRefreshNewsWithPage:@"1" andNewsCount:@"10" andRefreshTypy:@"1" andLastID:@"960" andLastTime:@"2015/04/30" andTypeid:@"8" andAuthorid:@"-1"];
+    
 }
 -(void)viewWillLayoutSubviews
 {
@@ -76,15 +81,7 @@
     cell.NewsInfo.text = @"百度百家";
     cell.Source.text = @"IT之家";
     cell.NewsPic.image = [UIImage imageNamed:@"2"];
-    UIBezierPath* path1 = [UIBezierPath bezierPathWithArcCenter:CGPointMake(cell.NewsPic.bounds.size.width/2, cell.NewsPic.bounds.size.height/2) radius:cell.NewsPic.bounds.size.width/2-5 startAngle:0 endAngle:2*M_PI clockwise:YES];
-    
-    CAShapeLayer* shape1 = [CAShapeLayer layer];
-    
-    shape1.path = path1.CGPath;
-    
-    cell.NewsPic.layer.mask = shape1;
-
-    
+    [Tools ChoosenImageViewChangeModelToCircle:cell.NewsPic];
     
     return cell;
 }
@@ -100,7 +97,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 70;
+    return 60;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
