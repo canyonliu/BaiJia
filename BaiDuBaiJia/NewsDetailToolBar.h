@@ -12,7 +12,7 @@ typedef enum
     NewsDetailToolBarButtonTagBack,//返回按钮
     NewsDetailToolBarButtonTagShare,//分享按钮
     NewsDetailToolBarButtonTagStore,//收藏按钮
-    NewsDetailToolBarButtonTagPraise//点赞按钮
+    //NewsDetailToolBarButtonTagPraise//点赞按钮
 }NewsDetailToolBarButtonTag;
 
 

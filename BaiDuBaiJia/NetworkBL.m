@@ -13,7 +13,7 @@
 
 
 
-#define serverHost @"http://121.41.118.163:8080/"
+#define serverHost @"http://121.41.118.163:8005/"
 
 @implementation NetworkBL
 
@@ -51,7 +51,9 @@
     //NSError *error = [request error];
     
     NSData *responseData = [request responseData];
-    NSLog(@"请求回来的所有的类型数据===%@",responseData);
+    NSString *aString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+    //NSLog(@"请求回来的最新的下拉数据===%@",responseData);
+    //NSLog(@"请求回来的最新的下拉数据 的 string=====%@",aString);
     
     return responseData;
 }
@@ -152,8 +154,8 @@
     
     NSData *responseData = [requestForm1 responseData];
     NSString *aString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
-    NSLog(@"请求回来的最新的下拉数据===%@",responseData);
-    NSLog(@"请求回来的最新的下拉数据 的 string=====%@",aString);
+//    NSLog(@"请求回来的最新的下拉数据===%@",responseData);
+//    NSLog(@"请求回来的最新的下拉数据 的 string=====%@",aString);
     
     return responseData;
 }

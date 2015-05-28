@@ -20,19 +20,34 @@
  *  也可以不用建表,直接nsuserDefault来存应该也可以
  */
 -(void)saveCyclePicture;
-/**
- *  @author LQC
- *
- *  根据新闻类型保存新闻 plist2
- */
--(void)saveNewsByType:(NSString *)typeID andRefreshType:(NSString *)refreshType;
-/**
- *  @author LQC
- *
- *  根据新闻作者保存新闻 plist3
- */
+///**
+// *  @author LQC
+// *
+// *  根据新闻类型保存新闻 plist2
+// */
+//-(void)saveNewsByType:(NSString *)typeID andRefreshType:(NSString *)refreshType;
 
--(void)saveNewsByAuthor:(NSString *)authorID andRefreshType:(NSString *)refreshType;
+
+
+
+
+-(void)saveAllNews:(NSData *)jsonData;
+
+
+-(void)saveAllNewsByType:(NSData *)jsonData andChannel:(NSString *)channel;
+
+
+
+
+
+
+///**
+// *  @author LQC
+// *
+// *  根据新闻作者保存新闻 plist3
+// */
+//
+//-(void)saveNewsByAuthor:(NSString *)authorID andRefreshType:(NSString *)refreshType;
 /**
  *  @author LQC
  *
@@ -63,19 +78,19 @@
 
 
 
--(NSMutableArray *)getCyclePicture;
-
--(NSMutableArray *)getNewsByType;
-
--(NSMutableArray *)getNewsByAuthor;
-
--(NSMutableArray *)getRefreshNewsByLastID;
-
--(NSMutableArray *)getRefreshNewsByLastTime;
-
--(NSMutableArray *)getRefreshLatestNewsByDown;
-
--(NSMutableArray *)getRefreshLatestNewsByUp;
+//-(NSMutableArray *)getCyclePicture;
+//
+//-(NSMutableArray *)getNewsByType:(NSString *)typeID andRefreshType:(NSString *)refreshType;
+//
+//-(NSMutableArray *)getNewsByAuthor;
+//
+//-(NSMutableArray *)getRefreshNewsByLastID;
+//
+//-(NSMutableArray *)getRefreshNewsByLastTime;
+//
+//-(NSMutableArray *)getRefreshLatestNewsByDown;
+//
+//-(NSMutableArray *)getRefreshLatestNewsByUp;
 
 
 @end

@@ -8,8 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "SDCycleScrollView.h"
+#import "ServerInterface.h"
+#import "MBProgressHUD.h"
 
 @interface ViewController : UIViewController
+{
+    MBProgressHUD *hud;
+    ServerInterface *_server;
+}
 
 @property (weak, nonatomic) IBOutlet UIView *headerView;
 @property (weak, nonatomic) IBOutlet UITableView *TableView;

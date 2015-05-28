@@ -11,6 +11,17 @@
 #import "UMSocialShakeService.h"
 
 @interface NewsDetailViewController : UIViewController
+
+
+
+
+@property (weak, nonatomic)    NSString *arr_content ;
+@property (weak, nonatomic)    NSString *arr_time;
+@property (weak, nonatomic)    NSString *arr_picture;
+@property (weak, nonatomic)    NSString *arr_title;
+@property (weak, nonatomic)    NSString *arr_url;
+
+
 /**
  设置响应摇一摇事件，并且弹出分享页面
  

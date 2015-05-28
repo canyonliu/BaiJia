@@ -17,6 +17,16 @@
 {
     MBProgressHUD *hud;
 }
+@property (weak, nonatomic) IBOutlet UILabel *newsDatailTitle;
+@property (weak, nonatomic) IBOutlet UIImageView *newsDetailImage;
+
+
+@property (weak, nonatomic) IBOutlet UILabel *newsDetailTime;
+@property (weak, nonatomic) IBOutlet UIScrollView *myScrollView;
+@property (weak, nonatomic) IBOutlet UILabel *newsDetailContent;
+
+
+
 
 @property(nonatomic ,strong)NewsDetailToolBar *toolBar;
 
@@ -28,6 +38,9 @@
     [super viewDidLoad];
     [self setupToolBar];
     [self registerShake];
+    
+    [self receiveValue];
+    
 
 }
 
@@ -36,6 +49,23 @@
     [super viewWillDisappear:YES];
     [UMSocialShakeService unShakeToSns];
 }
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    self.myScrollView.contentSize=CGSizeMake(320.0,600.0);
+}
+
+
+-(void)receiveValue
+{
+    self.newsDetailTime.text = self.arr_time;
+    self.newsDetailImage.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.arr_picture]]];
+    self.newsDetailContent.text = self.arr_content;
+    self.newsDatailTitle.text = self.arr_title;
+}
+
+
 
 -(void)setupToolBar
 {
@@ -57,7 +87,7 @@
 {
     //注册摇一摇截图分享
     [UMSocialShakeService setShakeToShareWithTypes:@[UMShareToSina,UMShareToWechatSession,UMShareToQzone,UMShareToQQ,UMShareToRenren]
-                                         shareText:@"你的分享文字"
+                                         shareText:@"来自--奔跑的土匪--分享"
                                       screenShoter:[UMSocialScreenShoterDefault screenShoter]
                                   inViewController:self
                                           delegate:nil];
@@ -75,10 +105,10 @@
             NSLog(@"点击返回按钮");
             break;
             
-        case NewsDetailToolBarButtonTagPraise:
+        //case NewsDetailToolBarButtonTagPraise:
             
-            NSLog(@"点击点赞按钮");
-            break;
+          //  NSLog(@"点击点赞按钮");
+           // break;
             
         case NewsDetailToolBarButtonTagShare:
             [self shareButtonClick];
@@ -108,17 +138,17 @@
     NSLog(@"_______%s_____",__FUNCTION__);
     [UMSocialSnsService presentSnsIconSheetView:self
                                          appKey:@"555b295867e58e3440002e5a"
-                                      shareText:@"你要分享的文字"
-                                     shareImage:[UIImage imageNamed:@"item"]
+                                      shareText:@"精彩你我共享"
+                                     shareImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.arr_picture]]]
                                 shareToSnsNames:[NSArray arrayWithObjects:UMShareToSina,UMShareToTencent,UMShareToWechatTimeline,UMShareToQzone,UMShareToQQ,UMShareToRenren,UMShareToDouban,UMShareToEmail,UMShareToSms,UMShareToFacebook,UMShareToTwitter,nil]
                                        delegate:nil];
     
     //Qzone设置title方法将平台参数名替换即可
     [UMSocialData defaultData].extConfig.qzoneData.title = @"Qzone分享title";
     //Qzone设置点击分享内容跳转链接替换平台参数名即可
-    [UMSocialData defaultData].extConfig.qzoneData.url = @"http://weibo.com";
+    [UMSocialData defaultData].extConfig.qzoneData.url = self.arr_url;
     
-    [UMSocialData defaultData].extConfig.qqData.url = @"http://weibo.com";
+    [UMSocialData defaultData].extConfig.qqData.url = self.arr_url;
 }
 
 
@@ -143,9 +173,9 @@
     //下面返回值控制是否显示分享编辑页面、是否显示截图、是否有音效，UMSocialShakeConfigNone表示都不显示
     
     //Qzone设置点击分享内容跳转链接替换平台参数名即可
-    [UMSocialData defaultData].extConfig.qzoneData.url = @"http://weibo.com";
+    [UMSocialData defaultData].extConfig.qzoneData.url = self.arr_url;
     
-    [UMSocialData defaultData].extConfig.qqData.url = @"http://weibo.com";
+    [UMSocialData defaultData].extConfig.qqData.url = self.arr_url;
     
     return UMSocialShakeConfigDefault;
 }

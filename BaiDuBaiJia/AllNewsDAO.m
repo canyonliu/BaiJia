@@ -50,7 +50,7 @@ static AllNewsDAO *shareManager = nil;
     
     NSMutableArray *array = [[NSMutableArray alloc]initWithContentsOfFile:path];
     
-    NSDictionary *dict = [NSDictionary dictionaryWithObjects:@[model.newsAuthor,model.newsID,model.newsPicture,model.newsSummary,model.NewsTime,model.newsTitle,model.newsUlr] forKeys:@[@"News_Author",@"News_ID",@"News_Pictrue",@"News_Summary",@"News_Time",@"News_Title",@"News_URL"]];
+    NSDictionary *dict = [NSDictionary dictionaryWithObjects:@[model.newsAuthor,model.newsID,model.newsTypeID,model.newsPicture,model.newsSummary,model.newsTime,model.newsTitle,model.newsUlr,model.newsContent] forKeys:@[@"News_Author",@"News_ID",@"News_TypeID",@"News_Pictrue",@"News_Summary",@"News_Time",@"News_Title",@"News_URL",@"News_Content"]];
     [array addObject:dict];
     [array writeToFile:path atomically:YES];
                           
@@ -68,12 +68,13 @@ static AllNewsDAO *shareManager = nil;
         {
             NewsInfo *newsItem = [NewsInfo new];
             newsItem.newsAuthor = [dict objectForKey:@"News_Author"];
-            newsItem.newsID =[dict objectForKey:@"News_ID"];
+            newsItem.newsTypeID =[dict objectForKey:@"News_TypeID"];
             newsItem.newsPicture =[dict objectForKey:@"News_Pictrue"];
             newsItem.newsSummary =[dict objectForKey:@"News_Summary"];
             newsItem.NewsTime =[dict objectForKey:@"News_Time"];
             newsItem.newsTitle =[dict objectForKey:@"News_Title"];
             newsItem.newsUlr =[dict objectForKey:@"News_URL"];
+            newsItem.newsContent = [dict objectForKey:@"News_Content"];
             
             [showArray addObject:newsItem];
         }
@@ -83,6 +84,8 @@ static AllNewsDAO *shareManager = nil;
     
     
 }
+
+
 
 
 -(void)removeAllNews

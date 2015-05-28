@@ -1,3 +1,5 @@
 platform :ios ,'6.0'  
 pod 'MBProgressHUD'
 pod 'ASIHTTPRequest'
+pod 'MJRefresh'
+pod 'SDWebImage', '~> 3.7.2'

@@ -28,8 +28,12 @@
 		9B19AD691AEE69E700DB9F46 /* NetworkBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B19AD681AEE69E700DB9F46 /* NetworkBL.m */; };
 		9B19AD701AEE741000DB9F46 /* NewsShowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B19AD6E1AEE741000DB9F46 /* NewsShowCell.m */; };
 		9B19AD711AEE741000DB9F46 /* NewsShowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B19AD6F1AEE741000DB9F46 /* NewsShowCell.xib */; };
+		9B588BC71B16D0D4001683FC /* GetContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B588BC61B16D0D4001683FC /* GetContent.m */; };
 		9B58958B1AFB985D002428B8 /* NewsParserBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B58958A1AFB985D002428B8 /* NewsParserBL.m */; };
 		9B5895931AFBB21D002428B8 /* NewsInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5895921AFBB21D002428B8 /* NewsInfo.m */; };
+		9B7799DC1B148DBD00530249 /* NewsTypeDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7799DB1B148DBD00530249 /* NewsTypeDAO.m */; };
+		9B7799DF1B14AEB400530249 /* ServerInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7799DE1B14AEB400530249 /* ServerInterface.m */; };
+		9B780BF21B154EE20017CEA0 /* ChannelDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B780BF11B154EE20017CEA0 /* ChannelDetailTableViewController.m */; };
 		9B8546BE1AEF165500E4E001 /* NewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8546BD1AEF165500E4E001 /* NewsDetailViewController.m */; };
 		9B9C36491AF3047800107EA3 /* UIViewController+XTSideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9C363F1AF3047800107EA3 /* UIViewController+XTSideMenu.m */; };
 		9B9C364A1AF3047800107EA3 /* XTSideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9C36411AF3047800107EA3 /* XTSideMenu.m */; };
@@ -137,10 +141,18 @@
 		9B19AD6D1AEE741000DB9F46 /* NewsShowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsShowCell.h; sourceTree = "<group>"; };
 		9B19AD6E1AEE741000DB9F46 /* NewsShowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsShowCell.m; sourceTree = "<group>"; };
 		9B19AD6F1AEE741000DB9F46 /* NewsShowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsShowCell.xib; sourceTree = "<group>"; };
+		9B588BC51B16D0D4001683FC /* GetContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetContent.h; sourceTree = "<group>"; };
+		9B588BC61B16D0D4001683FC /* GetContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetContent.m; sourceTree = "<group>"; };
 		9B5895891AFB985D002428B8 /* NewsParserBL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsParserBL.h; sourceTree = "<group>"; };
 		9B58958A1AFB985D002428B8 /* NewsParserBL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsParserBL.m; sourceTree = "<group>"; };
 		9B5895911AFBB21D002428B8 /* NewsInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsInfo.h; sourceTree = "<group>"; };
 		9B5895921AFBB21D002428B8 /* NewsInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsInfo.m; sourceTree = "<group>"; };
+		9B7799DA1B148DBD00530249 /* NewsTypeDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTypeDAO.h; sourceTree = "<group>"; };
+		9B7799DB1B148DBD00530249 /* NewsTypeDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTypeDAO.m; sourceTree = "<group>"; };
+		9B7799DD1B14AEB400530249 /* ServerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerInterface.h; sourceTree = "<group>"; };
+		9B7799DE1B14AEB400530249 /* ServerInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerInterface.m; sourceTree = "<group>"; };
+		9B780BF01B154EE20017CEA0 /* ChannelDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelDetailTableViewController.h; sourceTree = "<group>"; };
+		9B780BF11B154EE20017CEA0 /* ChannelDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelDetailTableViewController.m; sourceTree = "<group>"; };
 		9B8546BC1AEF165500E4E001 /* NewsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDetailViewController.h; sourceTree = "<group>"; };
 		9B8546BD1AEF165500E4E001 /* NewsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetailViewController.m; sourceTree = "<group>"; };
 		9B9C363E1AF3047800107EA3 /* UIViewController+XTSideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XTSideMenu.h"; sourceTree = "<group>"; };
@@ -359,8 +371,12 @@
 		9B19AD651AEE693E00DB9F46 /* BusinessLayer */ = {
 			isa = PBXGroup;
 			children = (
+				9B588BC51B16D0D4001683FC /* GetContent.h */,
+				9B588BC61B16D0D4001683FC /* GetContent.m */,
 				9B19AD671AEE69E700DB9F46 /* NetworkBL.h */,
 				9B19AD681AEE69E700DB9F46 /* NetworkBL.m */,
+				9B7799DD1B14AEB400530249 /* ServerInterface.h */,
+				9B7799DE1B14AEB400530249 /* ServerInterface.m */,
 				9B5895891AFB985D002428B8 /* NewsParserBL.h */,
 				9B58958A1AFB985D002428B8 /* NewsParserBL.m */,
 			);
@@ -392,8 +408,21 @@
 			children = (
 				9BACB6541B0B529C007216CB /* AllNewsDAO.h */,
 				9BACB6551B0B529C007216CB /* AllNewsDAO.m */,
+				9B7799DA1B148DBD00530249 /* NewsTypeDAO.h */,
+				9B7799DB1B148DBD00530249 /* NewsTypeDAO.m */,
 			);
 			name = LocalDataBase;
+			sourceTree = "<group>";
+		};
+		9B780BD71B154C930017CEA0 /* DetailChannelViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9B9C36531AF30BBA00107EA3 /* BJLeftViewController.h */,
+				9B9C36541AF30BBA00107EA3 /* BJLeftViewController.m */,
+				9B780BF01B154EE20017CEA0 /* ChannelDetailTableViewController.h */,
+				9B780BF11B154EE20017CEA0 /* ChannelDetailTableViewController.m */,
+			);
+			name = DetailChannelViewController;
 			sourceTree = "<group>";
 		};
 		9B8546BF1AEF166000E4E001 /* Controller */ = {
@@ -458,8 +487,7 @@
 		9B9C364F1AF30A9000107EA3 /* XTSideMenu */ = {
 			isa = PBXGroup;
 			children = (
-				9B9C36531AF30BBA00107EA3 /* BJLeftViewController.h */,
-				9B9C36541AF30BBA00107EA3 /* BJLeftViewController.m */,
+				9B780BD71B154C930017CEA0 /* DetailChannelViewController */,
 			);
 			name = XTSideMenu;
 			sourceTree = "<group>";
@@ -692,6 +720,7 @@
 				TargetAttributes = {
 					9B19AD2F1AEE60EC00DB9F46 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = M892P9SSGG;
 					};
 					9B19AD481AEE60EC00DB9F46 = {
 						CreatedOnToolsVersion = 6.2;
@@ -810,17 +839,20 @@
 			files = (
 				9B19AD3C1AEE60EC00DB9F46 /* ViewController.m in Sources */,
 				9BD572401B0C7998003A8B61 /* Tools.m in Sources */,
+				9B588BC71B16D0D4001683FC /* GetContent.m in Sources */,
 				9BACB6561B0B529C007216CB /* AllNewsDAO.m in Sources */,
 				9B19AD391AEE60EC00DB9F46 /* AppDelegate.m in Sources */,
 				9B19AD691AEE69E700DB9F46 /* NetworkBL.m in Sources */,
 				9B9E09BA1AEF95790077FC2D /* NewsDetailToolBar.m in Sources */,
 				9B9C364C1AF3047800107EA3 /* UIView+XTFrame.m in Sources */,
+				9B7799DF1B14AEB400530249 /* ServerInterface.m in Sources */,
 				9B19AD701AEE741000DB9F46 /* NewsShowCell.m in Sources */,
 				9B8546BE1AEF165500E4E001 /* NewsDetailViewController.m in Sources */,
 				9B58958B1AFB985D002428B8 /* NewsParserBL.m in Sources */,
 				9B09CB441AFA391600DCB250 /* UIView+SDExtension.m in Sources */,
 				9BE110D01AF3547F006D97B8 /* LeftViewCell.m in Sources */,
 				9B5895931AFBB21D002428B8 /* NewsInfo.m in Sources */,
+				9B7799DC1B148DBD00530249 /* NewsTypeDAO.m in Sources */,
 				9B09CB411AFA391600DCB250 /* TAAnimatedDotView.m in Sources */,
 				9B09CB401AFA391600DCB250 /* TAAbstractDotView.m in Sources */,
 				9B09CB421AFA391600DCB250 /* TADotView.m in Sources */,
@@ -829,6 +861,7 @@
 				9B9C364B1AF3047800107EA3 /* UIImage+ImageEffects.m in Sources */,
 				9B9C36551AF30BBA00107EA3 /* BJLeftViewController.m in Sources */,
 				9B9C36491AF3047800107EA3 /* UIViewController+XTSideMenu.m in Sources */,
+				9B780BF21B154EE20017CEA0 /* ChannelDetailTableViewController.m in Sources */,
 				9B9C364A1AF3047800107EA3 /* XTSideMenu.m in Sources */,
 				9B09CB431AFA391600DCB250 /* TAPageControl.m in Sources */,
 				9B19AD361AEE60EC00DB9F46 /* main.m in Sources */,
@@ -900,6 +933,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -917,7 +951,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -941,6 +975,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -952,7 +987,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -965,6 +1000,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BaiDuBaiJia/Lib/umeng_ios_social_sdk_4.2.2_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
@@ -1000,6 +1037,7 @@
 					"\"SystemConfiguration\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -1009,6 +1047,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Lei Li (M892P9SSGG)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Lei Li (M892P9SSGG)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BaiDuBaiJia/Lib/umeng_ios_social_sdk_4.2.2_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
@@ -1044,6 +1084,7 @@
 					"\"SystemConfiguration\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

@@ -83,7 +83,7 @@
             NSLog(@"WIFI连接网络");
             break;
         case ReachableViaWWAN:
-            isExistenceNetwork = NO;
+            isExistenceNetwork = YES;
             NSLog(@"流量连接网络");
             break;
     }

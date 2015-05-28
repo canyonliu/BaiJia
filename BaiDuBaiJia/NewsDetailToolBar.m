@@ -19,11 +19,11 @@
         [self addButtonWithIcon:@"back" highlightedIcon:@"back" tag:
          NewsDetailToolBarButtonTagBack];
         
-        [self addButtonWithIcon:@"home" highlightedIcon:@"home" tag:NewsDetailToolBarButtonTagPraise];
+       // [self addButtonWithIcon:@"home" highlightedIcon:@"home" tag:NewsDetailToolBarButtonTagPraise];
         
-        [self addButtonWithIcon:@"left" highlightedIcon:@"left" tag:NewsDetailToolBarButtonTagShare];
+        [self addButtonWithIcon:@"share" highlightedIcon:@"share" tag:NewsDetailToolBarButtonTagShare];
         
-        [self addButtonWithIcon:@"store" highlightedIcon:@"store" tag:NewsDetailToolBarButtonTagStore];
+        [self addButtonWithIcon:@"store" highlightedIcon:@"store1" tag:NewsDetailToolBarButtonTagStore];
         
         
         
